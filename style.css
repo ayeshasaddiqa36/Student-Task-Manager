@@ -1,0 +1,89 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 40px;
+    margin: 0;
+}
+
+h1 
+{
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+#task-form 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+#task-form input,
+#task-form textarea 
+{
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#task-form input:focus,
+#task-form textarea:focus 
+{
+   outline: none;
+   border: 2px solid #555;
+}
+
+#task-form textarea
+{   min-height: 100px;
+        resize: vertical;
+}
+
+#task-form button 
+{
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+#task-form button:hover
+{     background-color: #555;
+}
+
+.task-card
+{     max-width: 500px;
+     margin: 20px auto;
+     padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    text-align: left;
+ }
+
+ @media (max-width: 600px)
+ {   body
+    {   padding: 20px;
+    }
+   #task-form,
+    .task-card
+{    width: 100%;
+    box-sizing: border-box;
+}
+
+h1
+{    font-size: 26px;
+}
+}
